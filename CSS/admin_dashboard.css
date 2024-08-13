@@ -1,0 +1,509 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.all{
+    background-image: url("../Images/hallway.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40vh;
+}
+
+.header{
+    display: flex;
+    background-color: #fff;
+    box-shadow: 30px 5px 10px rgb(250, 250, 250);
+    width: 100%;
+    height: 65px;
+    padding: 1%;
+    text-align: center;
+    z-index: 10;
+}
+
+.sub_header{
+    display: flex;
+    position: absolute;
+    right: 2%;
+}
+
+li{
+   list-style: none;
+}
+
+.image{
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: -3.5rem;
+}
+
+.logout{
+    margin-top: 0.6rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header h2{
+    font-size: 28px;
+    color: teal;
+}
+
+/* endng header and side menu started here */
+.sidemenu{
+    background-color: green;
+    border-radius: 2px;
+    position: absolute;
+    width: 15%;
+    z-index: 11;
+    overflow-y: scroll;
+
+}
+
+.side_ul{
+   display: flex;
+   flex-direction: column;
+   height: 100vh;
+}
+
+.side_ul h3{
+    font-size: 17px;
+    color: #fff;
+    margin-left: 2%;
+}
+
+.side_ul li{
+    color: #fff;
+    margin-bottom: 4%;
+    margin-left: -10%;
+}
+
+.side_ul li a{
+    color: #fff;
+    
+}
+
+.side_ul li:hover{
+    background-color: gray;
+    transition: 0.2s ease-in;
+    border-bottom-left-radius: 4%;
+
+ }
+ 
+ .side_ul li a button{ 
+    margin: 5%;
+    padding: 4px;
+    border: none;
+    width: 20%;
+    border-radius: 4px;
+    font-size: 15px;
+    color: green;
+ }
+
+.toggler{
+    display: none;
+    position: absolute;
+    right: 2%;
+}
+
+/* sidemenu end here and boxes started here */
+.admin{
+   margin: 0.2% 0 0 18%;
+   font-size: 8px;
+   color: lightgreen;
+}
+
+.boxes{
+  margin-left: 20%;  
+  display: flex;  
+}
+
+.boxes .add_doctor{
+    background: lightgreen;
+    border-radius: 4px;
+    color: #fff;
+    width: 20%;
+    padding: 2%;
+    margin: 0 4% 0 0;
+
+}
+
+.boxes .add_doctor:hover{
+    opacity: 0.7;
+    transition: 0.3s ease-in;
+    border-left: solid 4px black;
+
+}
+
+.add_doctor h3{
+    font-size: 18px;
+    text-align: center;
+}
+
+.add_doctor span{
+    display: flex;
+    justify-content: center;
+}
+
+.add_doctor span .fa{
+    margin: 0 4% 0 0;
+    font-size: 20px;
+    color: rgb(250, 250, 250);
+}
+
+.add_doctor span #add{
+    margin: 0 0 0 4%;
+    font-size: 20px;
+    color: #fff;
+
+}
+/* ending of add doctor and start of view doctor*/
+.boxes .view_doctors{
+    background: darkseagreen;
+    border-radius: 4px;
+    color: #fff;
+    width: 20%;
+    padding: 2%;
+    margin: 0 4% 0 0;
+
+}
+
+.boxes .view_doctors:hover{
+    opacity: 0.7;
+    transition: 0.3s ease-in;
+    border-left: solid 4px black;
+
+}
+
+.view_doctors h3{
+    font-size: 18px;
+    text-align: center;
+}
+
+.view_doctors span{
+    display: flex;
+    justify-content: center;
+}
+
+.view_doctors span a{
+    margin: 0 4% 0 0;
+    font-size: 20px;
+    color: #fff;
+
+}
+/* ending of viewing doctord and start of viewing staffs */
+.boxes .view_staffs{
+    background: darkseagreen;
+    border-radius: 4px;
+    color: #fff;
+    width: 20%;
+    padding: 2%;
+    margin: 0 4% 0 0;
+
+}
+
+.boxes .view_staffs:hover{
+    opacity: 0.7;
+    transition: 0.3s ease-in;
+    border-left: solid 4px black;
+
+}
+
+.view_staffs h3{
+    font-size: 18px;
+    text-align: center;
+}
+
+.view_staffs span{
+    display: flex;
+    justify-content: center;
+}
+
+.view_staffs span a{
+    margin: 0 4% 0 0;
+    font-size: 20px;
+    color: #fff;
+}
+/* ending of viewing staffs and start of adding staffs */
+.boxes .add_staff{
+    background: lightgreen;
+    border-radius: 4px;
+    color: #fff;
+    width: 20%;
+    padding: 2%;
+    margin: 0 4% 0 0;
+}
+
+.boxes .add_staff:hover{
+    opacity: 0.7;
+    transition: 0.3s ease-in;
+    border-left: solid 4px black;
+}
+
+.add_staff h3{
+    font-size: 18px;
+    text-align: center;
+}
+
+.add_staff span{
+    display: flex;
+    justify-content: center;
+}
+
+.add_staff span a i{
+    margin: 0 0 0 .3rem;
+    font-size: 18px;
+    color: #fff;
+
+}
+
+/* ending of adding staffs and start of add pattients */
+.boxes .add_patient{
+    background: lightgreen;
+    border-radius: 4px;
+    color: #fff;
+    width: 20%;
+    padding: 2%;
+    margin: 0 4% 0 0;
+
+}
+
+.boxes .add_patient:hover{
+    opacity: 0.7;
+    transition: 0.3s ease-in;
+    border-left: solid 4px black;
+
+}
+
+.add_patient h3{
+    font-size: 18px;
+    text-align: center;
+}
+
+.add_patient span{
+    display: flex;
+    justify-content: center;
+}
+
+.add_patient span a{
+    margin: 0 4% 0 0;
+    font-size: 20px;
+    color: #fff;
+}
+/* ending of adding patients and start of viewing patients */
+.boxes .view_patients{
+    background: darkseagreen;
+    border-radius: 4px;
+    color: #fff;
+    width: 20%;
+    padding: 2%;
+    margin: 0 4% 0 0;
+}
+
+.boxes .view_patients:hover{
+    opacity: 0.7;
+    transition: 0.3s ease-in;
+    border-left: solid 4px black;
+}
+
+.view_patients h3{
+    font-size: 18px;
+    text-align: center;
+}
+
+.view_patients span{
+    display: flex;
+    justify-content: center;
+}
+
+.view_patients span a i{
+    margin: 0 0 0 .3rem;
+    font-size: 18px;
+    color: #fff;
+
+}
+
+/* search records */
+.search_record{
+    display: flex;
+    justify-content: right;
+}
+
+.search_record button{
+  border: none;
+  color: white;
+  background-color: green;
+  padding: .4rem;
+}
+
+#new{
+    display: flex;
+    flex-direction: column;
+}
+
+/* tables */
+#table{
+    position: absolute;
+    left: 20%;
+    margin-top: 5%;
+    width: 80%;
+    z-index: 0;
+    overflow: scroll;
+    height: 40vh; 
+}
+
+#table h3{
+    position: absolute;
+ 
+}
+
+/* Responsive*/
+
+/* big screen */
+@media (max-width: 1100px){
+    .sidemenu{
+        width: 22%;
+    }
+
+    .admin{
+        margin-left: 24%;
+    }
+
+   .boxes{
+      margin-left: 25%;
+   }
+}
+
+/* big screen */
+@media (max-width: 1050px){
+    .sidemenu{
+        width: 20%;
+    }
+
+    .admin{
+        margin-left: 24%;
+    }
+
+   .boxes{
+      margin-left: 23%;
+   }
+}
+
+/*  small screen from 800 <  */
+@media (max-width: 800px){
+
+    .header{
+         background-color: green;
+         color: #fff;
+    }
+
+    .header h2{
+        color: #fefefe;
+    }
+
+    .sidemenu{
+        display: none;
+    }
+
+    .sidemenu1{
+        background-color: #000;
+        border-radius: 2px;
+        position: absolute;
+        width: 54%;
+        z-index: 11;
+     }
+
+    .side_ul h3{
+        position: absolute;
+        left: 1%;
+        top: 9%;
+
+    }
+
+    .side_ul li{
+        width: 90%;
+        margin-bottom: -1.5%;
+    }
+
+    .sub_header{
+        display: none;
+    }
+
+    .toggler{
+        display: block;
+        cursor: pointer;
+        font-size: 23px;
+
+    }
+
+    .admin{
+        margin: -2.3% 0 0 1%;
+    }
+
+    .boxes{
+        width: 88%;
+        position: absolute;
+        left: -11%;
+        overflow-x: scroll;
+    }
+
+    .add_doctor, .view_doctors,.view_staffs,.add_staff, .add_patient, .view_patients{
+        width: 90%;
+    }
+
+}
+
+/* small screens 642 < */
+@media (max-width: 642px){
+    .boxes{
+        width: 88%;
+        position: absolute;
+        left: -11%;
+        overflow-x: scroll;
+    }
+
+    .add_doctor,.view_doctors,.view_staffs,.add_staff{
+        width: 70%;
+    }
+}
+
+/* small screens 550 < */
+@media (max-width: 550px){
+    .boxes{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .boxes .add_doctor, .boxes .view_doctors, .boxes .add_staff, .boxes .view_staffs,
+     .boxes .add_patient, .boxes .view_patients{
+        width: 70%;
+        height: 15vh;
+        margin: 0 auto;
+        margin-bottom: 3%;
+    }
+
+
+}
+
+@media (max-width: 413px){
+.sidemenu1{
+    width: 54%;
+ }
+}
+
+@media (max-width: 280px){
+    .sidemenu1{
+        width: 57%;
+     }
+}
+
+@media (max-width: 245px){
+    .sidemenu1{
+        width: 60%;
+     }
+}
